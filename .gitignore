@@ -1,0 +1,11 @@
+#virtual environment directory
+venv/
+
+# dependencies
+/.vscode
+
+# environment variables
+*.env
+
+# python compiled bytecode
+*.pyc
