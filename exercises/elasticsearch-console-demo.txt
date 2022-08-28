@@ -1,0 +1,31 @@
+DELETE /demo
+ 
+PUT /demo
+ 
+POST /demo/_mappings 
+ {
+    "properties": {  
+    "body": {"type": "text","analyzer": "english","fielddata":true},
+    "abstract": {"type": "text","analyzer": "english","fielddata":true}
+        }
+  }
+  
+POST /demo/_doc
+ {
+    "abstract":"Abstract of document 1",
+    "body": "Document about Sports"
+}
+
+POST /demo/_doc
+ {
+    "abstract":"Abstract of document 2",
+    "body": "Document about Health"
+}
+
+POST /demo/_search
+{"query": 
+        {
+        "match": 
+            {"body":"health"}
+        }
+    }
