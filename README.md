@@ -12,7 +12,7 @@ Note: these instructions are on windows 10 machines. It should be similar on oth
 
 ### Running the Server
 1. Using the command line, go to the main directory: `cd YOURPATH\Training-Codelab\backend`
-2. Activate the virtual environment: `./venv\Scripts\activate`
+2. Activate the virtual environment: `./venv\Scripts\activate` or `source venv/bin/activate` 
 3. To run the microservice: `python server.py`
 4. Similarly, to run other individual python files: `python FILENAME.py`
 
